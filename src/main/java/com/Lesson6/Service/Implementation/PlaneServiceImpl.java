@@ -2,11 +2,12 @@ package com.Lesson6.Service.Implementation;
 
 import com.Lesson6.DAO.PlaneDAO;
 import com.Lesson6.Model.Plane;
+import com.Lesson6.Service.PlaneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PlaneServiceImpl {
+public class PlaneServiceImpl implements PlaneService {
 
     PlaneDAO planeDAO;
 

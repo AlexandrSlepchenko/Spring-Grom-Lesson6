@@ -48,7 +48,7 @@ public class Passenger {
         return passportCode;
     }
 
-    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "passengers")
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "passenger")
     public List<Flight> getFlights() {
         return flights;
     }

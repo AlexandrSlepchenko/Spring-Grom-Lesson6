@@ -2,11 +2,12 @@ package com.Lesson6.Service.Implementation;
 
 import com.Lesson6.DAO.PassengerDAO;
 import com.Lesson6.Model.Passenger;
+import com.Lesson6.Service.PassengerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PassengerServiceImpl {
+public class PassengerServiceImpl implements PassengerService {
     PassengerDAO passengerDAO;
 
     @Autowired
@@ -14,15 +15,15 @@ public class PassengerServiceImpl {
         this.passengerDAO = passengerDAO;
     }
 
-    public Passenger save(Passenger passenger){
+    public Passenger savePassenger(Passenger passenger){
         return passengerDAO.save(passenger);
     }
 
-    public Passenger update(Passenger passenger){
+    public Passenger updatePassenger(Passenger passenger){
         return passengerDAO.update(passenger);
     }
 
-    public void delete(Long id){
+    public void deletePassenger(Long id){
         passengerDAO.deleteById(id);
     }
 

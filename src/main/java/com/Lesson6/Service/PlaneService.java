@@ -4,9 +4,9 @@ import com.Lesson6.Model.Plane;
 
 public interface PlaneService {
 
-    Plane save(Plane plane);
-    Plane update(Plane plane);
-    void delete(Long id);
-    Plane findById(Long id);
+    Plane savePlane(Plane plane);
+    Plane updatePlane(Plane plane);
+    void deletePlane(Long id);
+    Plane findPlaneById(Long id);
 
 }
